@@ -1,0 +1,101 @@
+﻿<Window x:Class="App15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="10550" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph FontSize="30" FontFamily="Verdana" FontWeight="Bold" TextAlignment="Center">
+                    Юрий Иванович Пименов
+                    <Floater Width="360" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source = "Data/pimenov.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+
+                <Paragraph FontSize ="15"  FontFamily="Verdana" TextAlignment="Justify">
+                    Художник счастливой творческой судьбы. Его работы, актуальные на протяжении всего XX века, и сегодня любимы и узнаваемы зрителями разных поколений.
+                    Выпускник Вхутемаса, член-учредитель Обще-ства станковистов, академик и лауреат государственных премий, Пименов с равной долей увлеченности и искренности 
+                    реализовал свой талант в живописи, графике, книжной иллюстрации, театрально-декорационном искусстве, литературных эссе. Влюбляясь во все новое
+                    в жизни страны, горячо откликаясь на счастливые и горестные события, мастер видел свою задачу в том, чтобы запечатлевать современность в ее 
+                    подвижности и изменчивости. Главным источником и материалом искусства он полагал «обыкновенное течение жизни» и считал воспоминания «душевным
+                    багажом человека и капиталом художника».
+                </Paragraph>
+                <Paragraph FontSize ="15" FontWeight="Bold" FontFamily="Verdana" TextAlignment="Left">
+                    Новая Москва. 1937
+                </Paragraph>
+
+                <Paragraph>
+                    <Floater Width="350" HorizontalAlignment="Left">
+                        <BlockUIContainer>
+                            <Image Source="Data/moscow.jpg" Stretch="UniformToFill" Width="300"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph FontSize ="15"  FontFamily="Verdana" TextAlignment="Left">
+                    Легкость, «моментальность» его произведений — итог постоянной кропотливой работы,наблюдений, случайных встреч, разговоров, путешествий в разные страны.
+                    Творческая манера Пименова менялась вместе со временем. Увлечением экспрессионизмом, яркими и динамичными образами отмечены ранние работы. К сожалению, не 
+                    все они сохранились. Чтобы как можно более полно показать этот период, кураторы проекта, используя современные технологии,
+                </Paragraph>
+
+                <Paragraph FontSize ="15" FontWeight="Bold" FontFamily="Verdana" TextAlignment="Left">
+                    Лирическое новоселье. 1965
+                </Paragraph>
+                <Paragraph>
+                    <Floater Width="400" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/vecher.jpg" Width="350" Height="400" Stretch="UniformToFill"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph FontSize ="15"  FontFamily="Verdana" TextAlignment="Left">
+                    представляют на выставке утраченные ранние картины, а также мультимедийный проект, посвященный одному из монументальных полотен — панно 
+                    «Физкультурный парад» (Государственный Русский музей), созданному для Всемирной выставки в Нью-Йорке в 1939 году. В 1930-х художник отдает предпочтение 
+                    импрессионизму, легкому и артистичному образу-впечатлению. В мироощущении и произведениях этого времени чувство новизны жизни перекрывает ее «трагедии и тяготы».
+                    Пименов старается видеть светлое и находить прекрасные моменты в окружающей его реальности. Он начинает разрабатывать одну из своих главных тем — жизнь 
+                    Москвы «в вечном росте, в движении», пишет знаменитый шедевр — картину «Новая Москва» (1937, Государственная Третьяковская галерея).
+                </Paragraph>
+                <Paragraph FontSize ="15" FontWeight="Bold" FontFamily="Verdana" TextAlignment="Left">
+                    Свадьба на завтрашней улице. 1962
+                </Paragraph>
+                <Paragraph>
+                    <Floater Width="400" HorizontalAlignment="left">
+                        <BlockUIContainer>
+                            <Image Source="Data/wedding.jpg" Width="350" Height="400" Stretch="UniformToFill"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph FontSize ="15"  FontFamily="Verdana" TextAlignment="Left">
+                    В конце 1950-х — 1960-е Пименов становится одним из создателей поэтики оттепельного стиля, воплощает темы сериями, словно разворачивает панораму современности. 
+                    Частные, мимолетные ситуации превращаются в отражение значимых событий московской жизни.Оптимистичное, пронизанное ритмами современности, артистичное искусство 
+                    Пименова и сегодня дорого зрителю своей человечностью, поэтическим строем, способностью художника восхищаться бесконечным многообразием жизни.
+                </Paragraph>
+
+
+
+
+
+                <BlockUIContainer>
+                    <StackPanel>
+                        <Button Content ="Нравится!" FontFamily="Verdana" Background="Beige"/>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+     
+    </Grid>
+</Window>
